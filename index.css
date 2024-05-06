@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.nav{
+    height: 60px;
+    width: 100%;
+    margin: 0px;
+    justify-content: right;
+    transition-delay: 1.5s;
+    display: flex;
+    text-align: right;
+   
+}
+.nav a{
+    padding: 10px 10px;
+    color: WHITE;
+    text-decoration: solid;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top: 15px;
+    position: relative;
+    text-align: right;
+    
+}
+.nav a::after{
+    
+    
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.image img{
+    height: 700px;
+    margin-left: 80px;
+    
+}
+.image{
+    color: white;
+    display: flex;
+    text-align: right;
+    transition: 0.5s;
+}
+
+.text{
+    margin-left: 200px;
+    margin-top: 200px;
+}
+.text h1{
+    font-family: serif;
+    font-size: 56px;
+    font-weight: lighter;
+    
+}
+
+.text h3{
+    font-size: 20px;
+    font-family: serif;
+    margin-right: 80px;
+    font-weight: lighter;
+
+}
+
+
+.about-me img{
+    border-radius: 50% ;
+    box-shadow:  0 0 20px #cccccc7e;
+    float: right;
+    margin-right: 9%;
+    margin-top: 100px;
+    margin-left: 100px;
+    transition: 0.5s;
+}
+
+    .about-me img:hover{
+        transform: scale(1.1);
+        
+        
+    }
+
+.about-me h2{
+    font-size: 40px;
+    
+    font-weight: 900;
+    margin-right: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-me p{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 800px;
+    
+    
+    
+}
+
+.SKILLS{
+    font-size: 22px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-top: 50px;
+    color: white;
+    padding-bottom: 0px;
+  }
+
+.container {
+    width: 70%;
+    background-color: #ddd;
+    margin-left: 15%;
+    position: relative;
+    margin-top: 20px;
+    
+    
+   
+    
+    
+}
+  
+  .SKILLS p{
+    color: white;
+    margin-left: 100px;
+    margin-top: 15px;
+    
+  }
+  .html {width: 90%; background-color: #04AA6D;}
+  .css {width: 80%; background-color: #2196F3;}
+  .js {width: 65%; background-color: #f44336;}
+  .php {width: 60%; background-color: #808080;}
+  .c {width: 85%; background-color: #f20ead;}
+  .java {width: 60%; background-color: #f00505;}
+  .PYTHON {width: 85%; background-color: #cfe10b;}
+
+  .project1{
+    border-radius: 25px ;
+    box-shadow:  10px 0 20px #cccccc7e;
+    margin-left: 10px;
+    width: 460px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .project1 p{
+    font-weight: lighter;
+    justify-content: center;
+  }
+  .project1 img{
+    border-radius: 25px;
+    margin-top: 10px;
+  }
+  .project-card{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+  }
+.resume{
+    display: flex;
+    margin-left: 25%;
+    margin-top: 100px;
+}
+.resume p{
+    margin-left: 150px;
+    border-radius: 15px;
+    box-shadow:  10px 0 20px #cccccc7e;
+    width: 500px;
+    height: 70px;
+    padding-top: 10px;
+    padding-left: 40px;
+    margin-top: 8px;
+}
+.contact{
+    margin-left: 10%;
+    margin-top: 100px;
+}
